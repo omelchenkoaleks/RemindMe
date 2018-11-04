@@ -1,15 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!--В этой папке будут общие стили, а новые должны быть записаны в папке values-v21-->
-
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" />
 
-    <!--Цвета по умолчанию, но можно добавить еще другую тему ниже...-->
     <style name="AppDefault" parent="AppTheme">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorControlNormal">@color/colorWhite</item>
 
-    </style>
+        <item name="android:statusBarColor">@android:color/transparent</item>
 
+    </style>
 </resources>
