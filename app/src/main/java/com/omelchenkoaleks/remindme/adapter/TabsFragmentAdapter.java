@@ -27,7 +27,6 @@ public class TabsFragmentAdapter extends FragmentPagerAdapter {
         initTabsMap(context);
     }
 
-    // Получает, какой именно фрагмент показать.
     @Override
     public Fragment getItem(int position) {
         return tabs.get(position);
