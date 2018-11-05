@@ -1,6 +1,5 @@
 package com.omelchenkoaleks.remindme;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -12,7 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.omelchenkoaleks.remindme.adapter.TabsPagerFragmentAdapter;
+import com.omelchenkoaleks.remindme.adapter.TabsFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity {
     // Выносим layout в константу, что было сразу видно вначале, какой макет мы используем.
@@ -55,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initTabs() {
         viewPager = findViewById(R.id.viewPager);
-        TabsPagerFragmentAdapter adapter = new TabsPagerFragmentAdapter(getSupportFragmentManager());
+        TabsFragmentAdapter adapter =
+                new TabsFragmentAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(adapter);
 
         TabLayout tabLayout = findViewById(R.id.tabLayout);
